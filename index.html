@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Calculadora de Gorjeta</title>
+    <link href="estilo/estilo.css" rel="stylesheet">
+   
+</head>
+<body>
+    <div id="container"> 
+    <div> 
+        <div class="títulos"> 
+        <h1> OneBitCode   </h1>
+<h2> Calculadora de Gorjetas</h2>
+</div>
+    </div>
+
+    <div> 
+        <form class="tipsform" id="tipsform"> 
+            <label for="conta">
+                <p> Quanto ficou a conta? </p>
+            </label>
+<p> R$ <input type="number" placeholder="100" name="conta" id="conta" class="formInput" required></p>
+<label for="serviceIgual"> 
+    <p> Como foi seu serviço? </p>
+    </label> 
+     
+<select name = "serviceIgual" id="serviceIgual" class="formSelect" required>
+    <option disable selected> - Escolha uma opção </option>
+    <option  value="0.3">30% - Incrível </option>
+    <option value="0.2">20% - Bom</option>
+    <option value="0.15">15% - Aceitável</option>
+    <option value="0.1">10% - Ruim</option>
+    <option value="0.05">5% - Péssimo</option>
+
+</select>
+
+ <label for="QuantiaDePessoas"> 
+    <p id = "pessoas"> Quantas pessoas vão dividir a conta?  </p>
+ </label>  
+<p> 
+ <input type="number" placeholder="1" name="QuantiaDePessoas" id="QuantiaDePessoas" class="formInput" required> pessoas
+</p>   
+<button type="submit" class="formSubmit"> Calcular</button>
+
+</form>
+
+    </div>
+    <div id="total"> 
+        <p>  Gorjeta Total: 
+         R$ <span id="Gorjeta"> 0.00 </span> 
+        <span id = "cada"> Cada </span> </p>
+            </div>
+</div>
+<script type="text/javascript" src="javascript/script.js"> </script>
+</body>
+</html>
